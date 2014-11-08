@@ -1,6 +1,7 @@
 # Roleup
 
 [![Code Climate](https://codeclimate.com/github/hopsoft/roleup/badges/gpa.svg)](https://codeclimate.com/github/hopsoft/roleup)
+[![Travis CI](https://travis-ci.org/hopsoft/roleup.svg)](https://travis-ci.org/hopsoft/roleup)
 
 Incredibly simple role management.
 Leaves authorization up to you.
