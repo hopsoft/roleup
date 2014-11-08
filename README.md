@@ -3,7 +3,7 @@
 [![Code Climate](https://codeclimate.com/github/hopsoft/roleup/badges/gpa.svg)](https://codeclimate.com/github/hopsoft/roleup)
 
 Incredibly simple role management.
-Leaves authorization concerns up to you.
+Leaves authorization up to you.
 
 ## Quickstart
 
