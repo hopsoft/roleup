@@ -20,14 +20,14 @@ module Roleup
       assert @user.has_role?(:editor)
     end
 
-    test "has_all?" do
-      assert @user.has_all?(:admin, :editor)
-      assert !@user.has_all?(:admin, :editor, :other)
+    test "has_all_roles?" do
+      assert @user.has_all_roles?(:admin, :EDITOR)
+      assert !@user.has_all_roles?(:admin, :editor, :other)
     end
 
-    test "has_one?" do
-      assert @user.has_one?(:other, :editor, :viewer)
-      assert !@user.has_one?(:other, :viewer)
+    test "has_one_role?" do
+      assert @user.has_one_role?(:other, :editor, :VIEWER)
+      assert !@user.has_one_role?(:other, :viewer)
     end
 
   end

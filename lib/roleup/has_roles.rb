@@ -12,11 +12,11 @@ module Roleup
       roles.include? role
     end
 
-    def has_all?(*roles)
+    def has_all_roles?(*roles)
       (self.roles & roles).size == roles.size
     end
 
-    def has_one?(*roles)
+    def has_one_role?(*roles)
       !(self.roles & roles).empty?
     end
   end
