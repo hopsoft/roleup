@@ -23,5 +23,21 @@ module Roleup
       assert @roles.include?("EDITOR")
     end
 
+    test "push" do
+      assert @roles.push(:other).include?(:other)
+    end
+
+    test "delete" do
+      @roles.delete :admin
+      assert !@roles.include?(:admin)
+    end
+
+    test "uniqueness" do
+      @roles << :other
+      @roles << :other
+      @roles << :other
+      assert @roles.size == @roles.to_a.uniq.size
+    end
+
   end
 end
