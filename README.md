@@ -19,7 +19,7 @@ class Foo
 end
 
 foo = Foo.new
-foo.set_roles :reader, :writer
+foo.roles = [:reader, :writer]
 
 foo.roles << :admin
 foo.roles.delete :admin

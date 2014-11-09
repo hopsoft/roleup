@@ -9,10 +9,10 @@ module Roleup
       end
 
       @obj_with_roles = class_with_roles.new
-      @obj_with_roles.set_roles :admin, :editor
+      @obj_with_roles.roles = :admin, :editor
     end
 
-    test "set_roles" do
+    test "assign roles" do
       assert @obj_with_roles.roles.to_a == [:admin, :editor]
     end
 

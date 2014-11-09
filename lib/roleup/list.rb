@@ -7,7 +7,7 @@ module Roleup
     def_delegators :inner_list, :each, :length, :size
 
     def initialize(*values)
-      @inner_list = values.map { |value| standardize(value) }.uniq.sort
+      @inner_list = values.flatten.map { |value| standardize(value) }.uniq.sort
     end
 
     def include?(value)

@@ -4,7 +4,7 @@ module Roleup
       @roles ||= List.new
     end
 
-    def set_roles(*roles)
+    def roles=(*roles)
       @roles = List.new(*roles)
     end
 
