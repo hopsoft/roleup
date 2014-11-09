@@ -6,6 +6,7 @@ Leaves authorization up to you.
 [![Code Climate](https://codeclimate.com/github/hopsoft/roleup/badges/gpa.svg)](https://codeclimate.com/github/hopsoft/roleup)
 [![Travis CI](https://travis-ci.org/hopsoft/roleup.svg)](https://travis-ci.org/hopsoft/roleup)
 [![Coverage Status](https://img.shields.io/coveralls/hopsoft/roleup.svg)](https://coveralls.io/r/hopsoft/roleup?branch=master)
+[![Lines of Code](http://img.shields.io/badge/loc-60-brightgreen.svg)](http://blog.codinghorror.com/the-best-code-is-no-code-at-all/)
 
 ## Quickstart
 
