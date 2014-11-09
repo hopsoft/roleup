@@ -9,17 +9,18 @@ Leaves authorization up to you.
 
 ## Quickstart
 
-```
+```sh
 gem install roleup
 ```
 
-```
+```ruby
 class Foo
   include Roleup::HasRoles
 end
 
 foo = Foo.new
 foo.set_roles = :reader, :writer
+
 foo.has_role? :reader # => true
 foo.has_role? :writer # => true
 foo.has_role? :admin # => false
