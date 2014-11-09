@@ -28,6 +28,7 @@ module Roleup
     end
 
     test "delete" do
+      assert @roles.include?(:admin)
       @roles.delete :admin
       assert !@roles.include?(:admin)
     end
