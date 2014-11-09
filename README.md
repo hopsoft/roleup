@@ -1,11 +1,11 @@
 # Roleup
 
+Incredibly simple role management.
+Leaves authorization up to you.
+
 [![Code Climate](https://codeclimate.com/github/hopsoft/roleup/badges/gpa.svg)](https://codeclimate.com/github/hopsoft/roleup)
 [![Travis CI](https://travis-ci.org/hopsoft/roleup.svg)](https://travis-ci.org/hopsoft/roleup)
 [![Coverage Status](https://img.shields.io/coveralls/hopsoft/roleup.svg)](https://coveralls.io/r/hopsoft/roleup?branch=master)
-
-Incredibly simple role management.
-Leaves authorization up to you.
 
 ## Quickstart
 
