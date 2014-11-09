@@ -14,21 +14,21 @@ gem install roleup
 ```
 
 ```ruby
-class Foo
+class User
   include Roleup::HasRoles
 end
 
-foo = Foo.new
-foo.roles = [:reader, :writer]
+user = User.new
+user.roles = [:reader, :writer]
 
-foo.has_role? :reader # => true
-foo.has_all? :reader, :writer # => true
-foo.has_all? :reader, :writer, :editor # => false
-foo.has_one? :writer, :editor, :admin # => true
+user.has_role? :reader # => true
+user.has_all? :reader, :writer # => true
+user.has_all? :reader, :writer, :editor # => false
+user.has_one? :writer, :editor, :admin # => true
 
-foo.roles << :admin
-foo.has_role? :admin # => true
+user.roles << :admin
+user.has_role? :admin # => true
 
-foo.roles.delete :admin
-foo.has_role? :admin # => false
+user.roles.delete :admin
+user.has_role? :admin # => false
 ```
