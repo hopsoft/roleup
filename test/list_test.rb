@@ -40,5 +40,10 @@ module Roleup
       assert @roles.size == @roles.to_a.uniq.size
     end
 
+    test "intersection" do
+      list = @roles & [:editor, :viewer, :other]
+      assert list == [:editor, :viewer]
+    end
+
   end
 end

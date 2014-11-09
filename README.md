@@ -21,10 +21,14 @@ end
 foo = Foo.new
 foo.roles = [:reader, :writer]
 
-foo.roles << :admin
-foo.roles.delete :admin
-
 foo.has_role? :reader # => true
-foo.has_role? :writer # => true
+foo.has_all? :reader, :writer # => true
+foo.has_all? :reader, :writer, :editor # => false
+foo.has_one? :writer, :editor, :admin # => true
+
+foo.roles << :admin
+foo.has_role? :admin # => true
+
+foo.roles.delete :admin
 foo.has_role? :admin # => false
 ```

@@ -2,23 +2,32 @@ require_relative "test_helper"
 
 module Roleup
   class HasRolesTest < MicroTest::Test
+    class User
+      include HasRoles
+    end
 
     before do
-      class_with_roles = Class.new do
-        include HasRoles
-      end
-
-      @obj_with_roles = class_with_roles.new
-      @obj_with_roles.roles = :admin, :editor
+      @user = User.new
+      @user.roles = :admin, :editor
     end
 
     test "assign roles" do
-      assert @obj_with_roles.roles.to_a == [:admin, :editor]
+      assert @user.roles.to_a == [:admin, :editor]
     end
 
     test "has_role?" do
-      assert @obj_with_roles.has_role?(:admin)
-      assert @obj_with_roles.has_role?(:editor)
+      assert @user.has_role?(:admin)
+      assert @user.has_role?(:editor)
+    end
+
+    test "has_all?" do
+      assert @user.has_all?(:admin, :editor)
+      assert !@user.has_all?(:admin, :editor, :other)
+    end
+
+    test "has_one?" do
+      assert @user.has_one?(:other, :editor, :viewer)
+      assert !@user.has_one?(:other, :viewer)
     end
 
   end
