@@ -3,6 +3,8 @@
 Incredibly simple role management.
 Leaves authorization up to you.
 
+_Checkout [Perm](https://github.com/hopsoft/perm) for a simple authorization solution._
+
 [![Lines of Code](http://img.shields.io/badge/loc-60-brightgreen.svg)](http://blog.codinghorror.com/the-best-code-is-no-code-at-all/)
 [![Dependency Status](https://gemnasium.com/hopsoft/roleup.svg)](https://gemnasium.com/hopsoft/roleup)
 [![Code Climate](https://codeclimate.com/github/hopsoft/roleup/badges/gpa.svg)](https://codeclimate.com/github/hopsoft/roleup)
