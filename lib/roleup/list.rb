@@ -6,21 +6,20 @@ module Roleup
     include Enumerable
     def_delegators :inner_list, :each
 
-    def initialize(*roles)
-      @inner_list = roles.map { |role| standardize(role) }.uniq.sort
+    def initialize(*values)
+      @inner_list = values.map { |value| standardize(value) }.uniq.sort
     end
 
-    def include?(role)
-      inner_list.include? standardize(role)
+    def include?(value)
+      inner_list.include? standardize(value)
     end
 
     protected
 
     attr_reader :inner_list
 
-    def standardize(role)
-      role.to_s.downcase.to_sym
+    def standardize(value)
+      value.to_s.downcase.to_sym
     end
-
   end
 end

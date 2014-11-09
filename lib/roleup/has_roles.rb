@@ -1,7 +1,5 @@
 module Roleup
   module HasRoles
-    attr_reader :roles
-
     def roles
       @roles ||= List.new
     end

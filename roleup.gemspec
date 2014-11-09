@@ -17,4 +17,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
   spec.add_development_dependency "micro_test"
   spec.add_development_dependency "simplecov"
+  spec.add_development_dependency "coveralls"
 end
