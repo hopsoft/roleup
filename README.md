@@ -26,9 +26,9 @@ user = User.new
 user.roles = [:reader, :writer]
 
 user.has_role? :reader # => true
-user.has_all? :reader, :writer # => true
-user.has_all? :reader, :writer, :editor # => false
-user.has_one? :writer, :editor, :admin # => true
+user.has_all_roles? :reader, :writer # => true
+user.has_all_roles? :reader, :writer, :editor # => false
+user.has_one_role? :writer, :editor, :admin # => true
 
 user.roles << :admin
 user.has_role? :admin # => true
