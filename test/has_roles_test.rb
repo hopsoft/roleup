@@ -1,7 +1,7 @@
 require_relative "test_helper"
 
 module Roleup
-  class HasRolesTest < MicroTest::Test
+  class HasRolesTest < PryTest::Test
     class User
       include HasRoles
     end

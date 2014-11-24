@@ -1,8 +1,5 @@
-require "simplecov"
-require 'coveralls'
-
-SimpleCov.start
-SimpleCov.command_name "mt"
+require "pry-test"
+require "coveralls"
 Coveralls.wear!
 
 require_relative "../lib/roleup"

@@ -1,7 +1,7 @@
 require_relative "test_helper"
 
 module Roleup
-  class ListTest < MicroTest::Test
+  class ListTest < PryTest::Test
 
     before do
       @roles = List.new("Admin", "Editor", "Viewer")
